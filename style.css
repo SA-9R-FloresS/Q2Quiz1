@@ -1,0 +1,178 @@
+/* @import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* FILE */
+:root {
+	/* BASE */
+	--bg: rgba(251, 246, 239, 0.5);
+	--text-color: rgb(53, 34, 8);
+	--text-shadow: rgba(255, 255, 255, 0.75);
+	--text-shadow-2: rgba(103, 64, 8, 0.75);
+
+	/* TABLE (B - BORDER, BG - BACKGROUND) */
+	--cn-b: #CA2A1D;
+	--cn-bg: #EA776E;
+	--jp-b: #DB2F37;
+	--jp-bg: #EA8689;
+	--kr-b: #122E76;
+	--kr-bg: #536BD3;
+	--ph-b: #F7D149;
+	--ph-bg: #FBDC95;
+	--vn-b: #F4BF44;
+	--vn-bg: #F9D393;
+}
+
+body {
+	background-image: url('https://geology.com/world/asia-map.gif');
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: 'Inter';
+	color: var(--text-color) !important;
+} 
+
+/* RESPONSIVE */
+@media (min-width: 992px) {
+	h1 {
+		font-size: 6rem;
+	}
+}
+
+@media (max-width: 991px) {
+	h1 {
+		font-size: 4rem;
+	}
+}
+
+@media (max-width: 775px) {
+	h1 {
+		font-size: 3rem;
+	}
+}
+
+/* MAIN */
+.main {
+	background-color: var(--bg);
+	border: 2px solid rgba(255, 255, 255, 0.25);
+	box-shadow: 0 0 40px 1px rgba(53, 34, 8, 0.5);
+	backdrop-filter: blur(25px);
+}
+
+/* HEADER */
+h1 {
+	color: rgb(8, 147, 234);
+	font-family: 'Montserrat';
+	font-weight: 750;
+	text-shadow: 0px 10px 15px var(--text-shadow);
+}
+
+.header p {
+	padding: 5px;
+	font-size: 1.2rem;
+	font-weight: 300;
+}
+
+/* TABLE */
+.content {
+	background-color: var(--bg);
+}
+
+.content img {
+	max-width: 150px;
+}
+
+thead {
+	font-family: 'Montserrat';
+	font-size: 1.8rem;
+	border: 2px solid var(--text-color)
+}
+
+thead th {
+	color: var(--text-color) !important;
+	font-weight: 625;
+}
+
+.profile {
+	font-size: 1.5rem;
+}
+
+.China {
+	border: 2px solid var(--cn-b);
+}
+
+.China td {
+	color: white;
+	background-color: var(--cn-bg);
+}
+
+.Japan {
+	border: 2px solid var(--jp-b);
+}
+
+.Japan td {
+	color: white;
+	background-color: var(--jp-bg);
+}
+
+.Korea {
+	border: 2px solid var(--kr-b);
+}
+
+.Korea td {
+	color: white;
+	background-color: var(--kr-bg);
+}
+
+.Philippines {
+	border: 2px solid var(--ph-b);
+}
+
+.Philippines td {
+	color: var(--text-color);
+	background-color: var(--ph-bg);
+}
+
+.Vietnam {
+	border: 2px solid var(--vn-b);
+}
+
+.Vietnam td {
+	color: var(--text-color);
+	background-color: var(--vn-bg);
+}
+
+/* REFERENCES */
+.references {
+	font-family: 'Montserrat';
+}
+
+.references h2 {
+	color: rgb(8, 147, 234);
+	font-weight: 750;
+	text-shadow: 0px 10px 15px var(--text-shadow);
+	background-color: var(--bg);
+	border-radius: 100px;
+}
+
+.references a {
+	color: white;
+	font-size: 1.2rem;
+	margin-left: 2rem;
+	margin-right: 2rem;
+	margin-bottom: 25px;
+}
+
+.references a:hover {
+	color: var(--text-color);
+}
+
+.references img {
+	width: 100px;
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+	margin-bottom: 25px;
+	transition: transform .2s;
+}
+
+.references img:hover {
+	transform: scale(1.1);
+}
